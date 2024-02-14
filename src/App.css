@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Kanit-Regular";
+  src: url("./fonts/Kanit-Regular.ttf") format("truetype");
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  --primary-color: 24, 69%;
+  --l: 53%;
+  --secondary-color: 180, 22%, 45%;
+  --tertiary-color: 0, 0%, 25%;
+}
+
+/* Good Practice:
+Set HTML Element in main .CSS */
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+span,
+div,
+body,
+textarea {
+  font-family: "Kanit-Regular", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  height: 45px;
+  min-width: 125px;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  /* See imports above and attached .tff */
+  font-family: "Kanit-Regular", sans-serif;
+  font-weight: 900;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.blue-btn {
+  --color: hsl(var(--secondary-color));
+  background-color: var(--color);
+  color: white;
+}
+.orange-btn {
+  --color: hsl(var(--primary-color), var(--l));
+  background-color: var(--color);
+  color: white;
+}
+
+.App {
+  position: relative;
+  top: 0;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 200px;
+}
